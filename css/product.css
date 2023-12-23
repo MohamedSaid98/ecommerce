@@ -41,32 +41,10 @@ a {
   right: 0;
   cursor: pointer;
   display: none;
-  z-index: 4;
+  z-index: 1000;
 }
 .show{
   display: block;
-}
-.header{
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 20px 0;
-}
-.icon-cart{
-  position: relative;
-  cursor: pointer;
-}
-.header .icon-cart i{
-  font-size: 24px;
-}
-.header .icon-cart span{
-  position: relative;
-  font-size: 12px;
-  top: 5px;
-  left: -5px;
-  padding: 2px 5px;
-  border: 1px solid #000;
-  border-radius: 50%;
 }
 /*  */
 .product-header{
@@ -79,9 +57,9 @@ a {
   align-items: center;
   justify-content: center;
   height: 100px;
-  margin: 20px 0;
+  margin:50px 0 20px ;
   /* background-image: url(../images/b2.jpg); */
-  background-color: #878787;
+  background-color: #27ae60;
   background-size: cover;
 
 }
@@ -152,11 +130,14 @@ a {
 .drop-down a{
   color: #000;
   cursor: pointer;
+  font-size: 12px;
+
 }
 .drop-down-menu .link{
   color: #000;
   display: block;
   padding: 10px;
+  font-size: 12px;
   cursor: pointer;
   transition: .3s;
 }
@@ -193,19 +174,6 @@ a {
   grid-template-columns: repeat(6,1fr) ;
 
 }
-
-
-
-/* @media (min-width: 120px) {
-  .product-sec .products{
-    grid-template-columns: repeat(,1fr) !important;
-    }
-}
-@media (max-width: 1250px) {
-  .product-sec .products{
-    grid-template-columns: repeat(3,1fr) !important;
-    }
-}*/
 @media (max-width: 992px ) {
   .product-sec .container .products{
   grid-template-columns: repeat(3,1fr) ;
@@ -336,18 +304,19 @@ a {
 }
 /* cart */
 .cart-tab{
-  width: 450px;
+  width: 380px;
   background-color: #fff;
   color: #202020;
   position: fixed;
   top: 0;
-  right: -450px;
+  right: -380px;
   bottom: 0;
   display: grid;
-  padding: 20px 30px 100px;
+  padding: 30px 20px 60px;
   grid-template-rows: 120px 1fr 70px;
   transition: .5s; 
-  z-index: 999;
+  z-index: 9999;
+  font-size: 12px;
 }
 .cart-tab.showCart{
   right: 0;
@@ -432,13 +401,15 @@ a {
 }
 .list-cart .item{
   display: grid;
-  grid-template-columns: 70px 150px 50px 1fr;
-  gap: 10px;
+  gap:10px;
+  grid-template-columns: 80px 100px 40px 1fr;
   text-align: center;
   align-items: center;
 }
 .list-cart .quantity span{
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 25px;
   height: 25px;
   background-color: #eee;

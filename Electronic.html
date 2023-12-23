@@ -3,21 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/product.css" />
     <link rel="stylesheet" href="./css/all.min.css" />
+    <script src="./js/bootstrap.bundle.min.js" defer></script>
     <script src="./js/electronic.js" defer></script>
     <title>Electronics</title>
   </head>
   <body>
     <header class="header">
-      <div class="icon-cart">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <span>0</span>
+      <img src="./images/logo.png" alt="stabraq" class="logo" />
+      <nav class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./About Us.html">About Us</a>
+        <a href="./Contact Us.html">Contact Us</a>
+        <a href="./men.html">Men</a>
+        <a href="./women.html">Women</a>
+        <a href="./jewellery.html">Jawellery</a>
+        <a class="active" href="#">Electrionics</a>
+      </nav>
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icons"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-user"></i>
+        <div class="icon-cart">
+          <i class="fas fa-shopping-cart icon-cart"></i>
+          <span>0</span>
+        </div>
       </div>
     </header>
     
     <section class="product-sec">
-      <header class="product-header">Electronics</header>
+      <div class="product-header">Electronics</div>
       <div class="container">
         <div class="view-drop">
           <div class="drop-down">
